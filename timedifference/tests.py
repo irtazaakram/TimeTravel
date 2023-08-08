@@ -26,6 +26,5 @@ class TimeSerializerTest(TestCase):
             'owner_id': self.test_user_id_1,
             'created_at': self.timestamp,
         }
-        print(TimeSerializer(self.test_time_model, context=context).data)
-        print(expected_output)
+
         assert TimeSerializer(self.test_time_model, context=context).data == expected_output

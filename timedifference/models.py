@@ -13,5 +13,4 @@ class TimeModel(models.Model):
 
     @classmethod
     def create_model(cls, user_id):
-        new_model = cls.objects.create(owner_id=user_id)
-        return new_model
+        return cls.objects.create(owner_id=user_id)
